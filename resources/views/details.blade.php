@@ -8,7 +8,10 @@
 </head>
 
 <body>
-    <h1>sono il dettaglio <?php echo $id ?></h1>
+    <h1> <?php echo $products->name; ?></h1>
+    <h1> <?php echo $products->price; ?></h1>
+    <h1> <?php echo $products->description; ?></h1>
+
 </body>
 
 </html>
