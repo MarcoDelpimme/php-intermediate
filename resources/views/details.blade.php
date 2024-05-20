@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('templates.base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<body>
+
+
+
+@section('title', 'Crea Prodotto')
+@section('content')
+
+
     <h1> <?php echo $products->name; ?></h1>
     <h1> <?php echo $products->price; ?></h1>
     <h1> <?php echo $products->description; ?></h1>
-
-</body>
-
-</html>
+@endsection

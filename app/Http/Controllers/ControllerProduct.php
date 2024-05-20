@@ -51,7 +51,14 @@ class ControllerProduct extends Controller
 
     public function modify($id)
     {
-        return view('modify', ['id' => $id]);
+
+        return view('modify', [
+            $product = Product::find($id),
+            'id' => $id,
+            'name' => $product->name,
+            'price' => $product->price,
+            'description' => $product->description
+        ]);
     }
 
 
@@ -62,6 +69,6 @@ class ControllerProduct extends Controller
         $update->price = $request->price;
         $update->description = $request->description;
         $update->save();
-        return redirect('/product', ['id' => $id]);
+        return redirect('/product');
     }
 }

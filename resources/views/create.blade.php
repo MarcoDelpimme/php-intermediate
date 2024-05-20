@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('templates.base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<body>
+
+
+
+@section('title', 'Crea Prodotto')
+@section('content')
     <h1>Crea Prodotto</h1>
 
     <form method="POST" action="{{ route('store') }}">
@@ -28,7 +26,4 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-
-</body>
-
-</html>
+@endsection
