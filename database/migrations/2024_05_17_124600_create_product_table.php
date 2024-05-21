@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->float('price');
             $table->timestamps();
+            $table->bigInteger('user_id')->nullable();
         });
     }
 

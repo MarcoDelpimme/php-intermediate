@@ -20,6 +20,7 @@ class ProductSeeder extends Seeder
                 'name' => fake()->name(),
                 'price' => fake()->numberBetween(1, 100),
                 'description' => fake()->text(50),
+                'user_id' => rand(1, 10),
             ]);
         }
     }
